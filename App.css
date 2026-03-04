@@ -1,74 +1,82 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   background-color: #316fc1;
 }
-.main-container{
+
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.center-container{
+
+.center-container {
   height: 500px;
   width: 350px;
 }
-.app-heading{
+
+.app-heading {
   padding: 4px;
-  color: yellowgreen;  
-  /* text-align: center; */
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: yellowgreen;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-transform: uppercase;
 }
-.input-container{
+
+.input-container {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
-.input-box-todo{
+
+.input-box-todo {
   margin-left: 10px;
   width: 70%;
   height: 40px;
   border-radius: 14px;
-  border:1px solid black;
-  padding-left: 10px;  
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+  border: 1px solid black;
+  padding-left: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   outline: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: large;
 }
-.add-btn{
-  width:40px;
-  height:40px;
+
+.add-btn {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border:none;
-  background-color:palevioletred;
+  border: none;
+  background-color: palevioletred;
   color: white;
   font-weight: bolder;
   font-size: larger;
-  margin-left: 10px;  
+  margin-left: 10px;
   cursor: pointer;
   box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
   transition: 0.3s;
 }
-.add-btn:active{
+
+.add-btn:active {
   box-shadow: none;
 }
-.list-container{
+
+.list-container {
   display: flex;
   align-items: center;
   margin-top: 5px;
 }
-.list-item{
+
+.list-item {
   list-style-type: none;
-  /* background-color: #596e8b; */
-  border:2px solid rgb(161, 158, 158);
-  color:greenyellow;
-  padding:3px;
+  border: 2px solid rgb(161, 158, 158);
+  color: greenyellow;
+  padding: 3px;
   padding-left: 5px;
-  border-radius: 5px; 
+  border-radius: 5px;
   width: 100%;
   height: 30px;
   display: flex;
@@ -76,19 +84,40 @@ body{
   position: relative;
   margin-top: 10px;
 }
-.icons{
+
+.icons {
   position: absolute;
   right: 10px;
 }
-.icons i{
+
+.icons i {
   margin: 4px;
   font-size: large;
   cursor: pointer;
-  transition: 0.1s;   
+  transition: 0.1s;
 }
-.icons i:hover{
-  transform: scale(1.2);  
+
+.icons i:hover {
+  transform: scale(1.2);
 }
-.icon-delete:hover{
+
+.icon-delete:hover {
   color: red;
+}
+
+/* Edit feature */
+.edit-input {
+  width: 75%;
+  height: 24px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: greenyellow;
+  padding-left: 5px;
+  font-size: medium;
+  outline: none;
+}
+
+.icon-edit:hover {
+  color: lightblue;
 }
